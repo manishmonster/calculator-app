@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 :root {
   --all-font-color2: hsl(0, 0, 100%);
   --theme1-bg-color: hsl(222, 26%, 31%);
@@ -32,11 +33,17 @@
   --theme3-font-color2: hsl(198, 20%, 13%);
 }
 
+* {
+  font-family: 'Spartan', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
 }
 
 .attribution {
