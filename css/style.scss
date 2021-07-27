@@ -50,38 +50,7 @@ body{
 h2, p, button{
     margin: 0;
 }
-//theme color 
-.theme1{
-    background: var(--theme1-bg-color);
-    > * {
-        color: var(--all-font-color2);
-    }
-    .result{
-        background: var(--theme1-screen-bg);
-    }
-    .card{
-        background: var(--theme1-toggle-color);
-    }
-    .btn{
-        background-color: var(--theme1-key1-bg);
-        border-color: var(--theme1-key1-bg) ;
-        color: var(--theme1-font-color1);
-        box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
-        &.secondary-key, &.accent-key {
-            color: var(--all-font-color2);
-        }
-        &.secondary-key{
-            background: var(--theme1-key2-bg);
-            border-color: var(--theme1-key2-bg) ;
-            box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
-        }
-        &.accent-key{
-            background: var(--theme1-key3-bg);
-            border-color: var(--theme1-key3-bg) ;
-            box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
-        }
-    }
-}
+
 .main-div {
     width: 30em;
     margin: 5em auto;
@@ -118,6 +87,80 @@ h2, p, button{
     &.secondary-key, &.accent-key {
         font-size: 1.5rem;
         padding: 0.43em 0;
+    }
+}
+.toggle-theme {
+    display: flex;
+    font-size: 0.7rem;
+    > p{
+        margin: 0.45em 1.1em;
+        font-size: 0.65rem;
+    }
+}
+.switch-toggle {
+    
+    height: 1.65em;
+    border-radius: 12em;
+    input {
+        position: absolute;
+        opacity: 0;
+    }
+    input + label {
+        display: inline-block;
+        cursor: pointer;
+        width: 0.7rem;
+        height: 0.7rem;
+        text-align: center;
+        margin: 0.31em 0.35em;
+        border-radius: 50%;
+    }
+    label{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: attr(data-value) " ";
+            top: -150%;
+            left: 30%;
+            font-size: 0.5rem;
+        }
+    }
+ } 
+//theme color 
+.theme1{
+    background: var(--theme1-bg-color);
+    > * {
+        color: var(--all-font-color2);
+    }
+    .result{
+        background: var(--theme1-screen-bg);
+    }
+    .card{
+        background: var(--theme1-toggle-color);
+    }
+    .btn{
+        background-color: var(--theme1-key1-bg);
+        border-color: var(--theme1-key1-bg) ;
+        color: var(--theme1-font-color1);
+        box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
+        &.secondary-key, &.accent-key {
+            color: var(--all-font-color2);
+        }
+        &.secondary-key{
+            background: var(--theme1-key2-bg);
+            border-color: var(--theme1-key2-bg) ;
+            box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
+        }
+        &.accent-key{
+            background: var(--theme1-key3-bg);
+            border-color: var(--theme1-key3-bg) ;
+            box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
+        }
+    }
+    .switch-toggle {
+        background: var(--theme1-toggle-color);
+        input:checked + label {
+        background: var(--theme1-key3-bg);
+      }
     }
 }
 .attribution { font-size: 11px; text-align: center; }

@@ -50,48 +50,6 @@ h2, p, button {
   margin: 0;
 }
 
-.theme1 {
-  background: var(--theme1-bg-color);
-}
-
-.theme1 > * {
-  color: var(--all-font-color2);
-}
-
-.theme1 .result {
-  background: var(--theme1-screen-bg);
-}
-
-.theme1 .card {
-  background: var(--theme1-toggle-color);
-}
-
-.theme1 .btn {
-  background-color: var(--theme1-key1-bg);
-  border-color: var(--theme1-key1-bg);
-  color: var(--theme1-font-color1);
-  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
-          box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
-}
-
-.theme1 .btn.secondary-key, .theme1 .btn.accent-key {
-  color: var(--all-font-color2);
-}
-
-.theme1 .btn.secondary-key {
-  background: var(--theme1-key2-bg);
-  border-color: var(--theme1-key2-bg);
-  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
-          box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
-}
-
-.theme1 .btn.accent-key {
-  background: var(--theme1-key3-bg);
-  border-color: var(--theme1-key3-bg);
-  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
-          box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
-}
-
 .main-div {
   width: 30em;
   margin: 5em auto;
@@ -147,6 +105,100 @@ h2, p, button {
 .btn.secondary-key, .btn.accent-key {
   font-size: 1.5rem;
   padding: 0.43em 0;
+}
+
+.toggle-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7rem;
+}
+
+.toggle-theme > p {
+  margin: 0.45em 1.1em;
+  font-size: 0.65rem;
+}
+
+.switch-toggle {
+  height: 1.65em;
+  border-radius: 12em;
+}
+
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch-toggle input + label {
+  display: inline-block;
+  cursor: pointer;
+  width: 0.7rem;
+  height: 0.7rem;
+  text-align: center;
+  margin: 0.31em 0.35em;
+  border-radius: 50%;
+}
+
+.switch-toggle label {
+  position: relative;
+}
+
+.switch-toggle label::after {
+  position: absolute;
+  content: attr(data-value) " ";
+  top: -150%;
+  left: 30%;
+  font-size: 0.5rem;
+}
+
+.theme1 {
+  background: var(--theme1-bg-color);
+}
+
+.theme1 > * {
+  color: var(--all-font-color2);
+}
+
+.theme1 .result {
+  background: var(--theme1-screen-bg);
+}
+
+.theme1 .card {
+  background: var(--theme1-toggle-color);
+}
+
+.theme1 .btn {
+  background-color: var(--theme1-key1-bg);
+  border-color: var(--theme1-key1-bg);
+  color: var(--theme1-font-color1);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
+          box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
+}
+
+.theme1 .btn.secondary-key, .theme1 .btn.accent-key {
+  color: var(--all-font-color2);
+}
+
+.theme1 .btn.secondary-key {
+  background: var(--theme1-key2-bg);
+  border-color: var(--theme1-key2-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
+          box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
+}
+
+.theme1 .btn.accent-key {
+  background: var(--theme1-key3-bg);
+  border-color: var(--theme1-key3-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
+          box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
+}
+
+.theme1 .switch-toggle {
+  background: var(--theme1-toggle-color);
+}
+
+.theme1 .switch-toggle input:checked + label {
+  background: var(--theme1-key3-bg);
 }
 
 .attribution {
