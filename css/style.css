@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 :root {
-  --all-font-color2: hsl(0, 0, 100%);
+  --all-font-color2: hsl(0, 0%, 100%);
   --theme1-bg-color: hsl(222, 26%, 31%);
   --theme1-toggle-color: hsl(223, 31%, 20%);
   --theme1-screen-bg: hsl(224, 36%, 15%);
@@ -44,6 +44,82 @@ body {
           box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
   font-weight: 700;
+}
+
+h2, p, button {
+  margin: 0;
+}
+
+.theme1 {
+  background: var(--theme1-bg-color);
+}
+
+.theme1 > * {
+  color: var(--all-font-color2);
+}
+
+.theme1 .result {
+  background: var(--theme1-screen-bg);
+}
+
+.theme1 .card {
+  background: var(--theme1-toggle-color);
+}
+
+.main-div {
+  width: 30em;
+  margin: 5em auto;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.result {
+  padding: 1em;
+  text-align: end;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  font-size: 2rem;
+}
+
+.card {
+  padding: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.7em;
+}
+
+.topkeys {
+  -webkit-columns: 4;
+          columns: 4;
+  margin: 0 0 1em 0;
+}
+
+.bottomkeys {
+  -webkit-columns: 2;
+          columns: 2;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.2em 0;
+  font-size: 32px;
+}
+
+.btn.secondary-key, .btn.accent-key {
+  font-size: 1.5rem;
+  padding: 0.43em 0;
 }
 
 .attribution {

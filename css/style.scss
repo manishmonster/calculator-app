@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 :root{
-    --all-font-color2: hsl(0, 0, 100%); //white
+    --all-font-color2: hsl(0, 0%, 100%); //white
     // for theme 1
     --theme1-bg-color : hsl(222, 26%, 31%);
     --theme1-toggle-color : hsl(223, 31%, 20%); // toggle background, keypad background)
@@ -47,6 +47,58 @@ body{
     font-family: 'Spartan', sans-serif;
     font-weight: 700;
 }
-
+h2, p, button{
+    margin: 0;
+}
+//theme color 
+.theme1{
+    background: var(--theme1-bg-color);
+    > * {
+        color: var(--all-font-color2);
+    }
+    .result{
+        background: var(--theme1-screen-bg);
+    }
+    .card{
+        background: var(--theme1-toggle-color);
+    }
+}
+.main-div {
+    width: 30em;
+    margin: 5em auto;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+.result {
+    padding: 1em;
+    text-align: end;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    font-size: 2rem;
+}
+.card {
+    padding: 1.8em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.7em;
+}
+.topkeys {
+    columns: 4;
+    margin: 0 0 1em 0;
+}
+.bottomkeys{
+    columns: 2;
+}
+.btn {
+    width: 100%;
+    padding: 0.2em 0;
+    font-size: 32px;
+    &.secondary-key, &.accent-key {
+        font-size: 1.5rem;
+        padding: 0.43em 0;
+    }
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
