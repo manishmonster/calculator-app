@@ -125,6 +125,12 @@ h2, p, button{
         }
     }
  } 
+@media screen and (max-width: 535px) {
+    .main-div {
+        width: 90%;
+        margin: 2em auto;
+    }
+}
 //theme color 
 .theme1{
     background: var(--theme1-bg-color);
