@@ -66,6 +66,32 @@ h2, p, button {
   background: var(--theme1-toggle-color);
 }
 
+.theme1 .btn {
+  background-color: var(--theme1-key1-bg);
+  border-color: var(--theme1-key1-bg);
+  color: var(--theme1-font-color1);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
+          box-shadow: 0 3px 0 0 var(--theme1-key1-shadow);
+}
+
+.theme1 .btn.secondary-key, .theme1 .btn.accent-key {
+  color: var(--all-font-color2);
+}
+
+.theme1 .btn.secondary-key {
+  background: var(--theme1-key2-bg);
+  border-color: var(--theme1-key2-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
+          box-shadow: 0 3px 0 0 var(--theme1-key2-shadow);
+}
+
+.theme1 .btn.accent-key {
+  background: var(--theme1-key3-bg);
+  border-color: var(--theme1-key3-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
+          box-shadow: 0 3px 0 0 var(--theme1-key3-shadow);
+}
+
 .main-div {
   width: 30em;
   margin: 5em auto;
@@ -115,6 +141,7 @@ h2, p, button {
   width: 100%;
   padding: 0.2em 0;
   font-size: 32px;
+  border-radius: 0.25em;
 }
 
 .btn.secondary-key, .btn.accent-key {
