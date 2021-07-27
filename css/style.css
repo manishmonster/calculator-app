@@ -208,6 +208,104 @@ h2, p, button {
   background: var(--theme1-key3-bg);
 }
 
+.theme2 {
+  background: var(--theme2-bg-color);
+}
+
+.theme2 > * {
+  color: var(--theme2-font-color1);
+}
+
+.theme2 .result {
+  background: var(--theme2-screen-bg);
+}
+
+.theme2 .card {
+  background: var(--theme2-toggle-color);
+}
+
+.theme2 .btn {
+  background-color: var(--theme2-key1-bg);
+  border-color: var(--theme2-key1-bg);
+  color: var(--theme2-font-color1);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme2-key1-shadow);
+          box-shadow: 0 3px 0 0 var(--theme2-key1-shadow);
+}
+
+.theme2 .btn.secondary-key, .theme2 .btn.accent-key {
+  color: var(--all-font-color2);
+}
+
+.theme2 .btn.secondary-key {
+  background: var(--theme2-key2-bg);
+  border-color: var(--theme2-key2-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme2-key2-shadow);
+          box-shadow: 0 3px 0 0 var(--theme2-key2-shadow);
+}
+
+.theme2 .btn.accent-key {
+  background: var(--theme2-key3-bg);
+  border-color: var(--theme2-key3-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme2-key3-shadow);
+          box-shadow: 0 3px 0 0 var(--theme2-key3-shadow);
+}
+
+.theme2 .switch-toggle {
+  background: var(--theme2-toggle-color);
+}
+
+.theme2 .switch-toggle input:checked + label {
+  background: var(--theme2-key3-bg);
+}
+
+.theme3 {
+  background: var(--theme3-bg-color);
+}
+
+.theme3 > * {
+  color: var(--theme3-font-color1);
+}
+
+.theme3 .result {
+  background: var(--theme3-toggle-color);
+}
+
+.theme3 .card {
+  background: var(--theme3-toggle-color);
+}
+
+.theme3 .btn {
+  background-color: var(--theme3-key1-bg);
+  border-color: var(--theme3-key1-bg);
+  color: var(--theme3-font-color1);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme3-key1-shadow);
+          box-shadow: 0 3px 0 0 var(--theme3-key1-shadow);
+}
+
+.theme3 .btn.secondary-key {
+  color: var(--all-font-color2);
+  background: var(--theme3-key2-bg);
+  border-color: var(--theme3-key2-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme3-key2-shadow);
+          box-shadow: 0 3px 0 0 var(--theme3-key2-shadow);
+}
+
+.theme3 .btn.accent-key {
+  color: var(--theme3-font-color2);
+  background: var(--theme3-key3-bg);
+  border-color: var(--theme3-key3-bg);
+  -webkit-box-shadow: 0 3px 0 0 var(--theme3-key3-shadow);
+          box-shadow: 0 3px 0 0 var(--theme3-key3-shadow);
+}
+
+.theme3 .switch-toggle {
+  background: var(--theme3-toggle-color);
+}
+
+.theme3 .switch-toggle input:checked + label {
+  background: var(--theme3-key3-bg);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

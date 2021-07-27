@@ -169,5 +169,78 @@ h2, p, button{
       }
     }
 }
+.theme2{
+    background: var(--theme2-bg-color);
+    > * {
+        color: var(--theme2-font-color1);
+    }
+    .result{
+        background: var(--theme2-screen-bg);
+    }
+    .card{
+        background: var(--theme2-toggle-color);
+    }
+    .btn{
+        background-color: var(--theme2-key1-bg);
+        border-color: var(--theme2-key1-bg) ;
+        color: var(--theme2-font-color1);
+        box-shadow: 0 3px 0 0 var(--theme2-key1-shadow);
+        &.secondary-key, &.accent-key {
+            color: var(--all-font-color2);
+        }
+        &.secondary-key{
+            background: var(--theme2-key2-bg);
+            border-color: var(--theme2-key2-bg) ;
+            box-shadow: 0 3px 0 0 var(--theme2-key2-shadow);
+        }
+        &.accent-key{
+            background: var(--theme2-key3-bg);
+            border-color: var(--theme2-key3-bg) ;
+            box-shadow: 0 3px 0 0 var(--theme2-key3-shadow);
+        }
+    }
+    .switch-toggle {
+        background: var(--theme2-toggle-color);
+        input:checked + label {
+        background: var(--theme2-key3-bg);
+      }
+    }
+}
+.theme3{
+    background: var(--theme3-bg-color);
+    > * {
+        color: var(--theme3-font-color1);
+    }
+    .result{
+        background: var(--theme3-toggle-color);
+    }
+    .card{
+        background: var(--theme3-toggle-color);
+    }
+    .btn{
+        background-color: var(--theme3-key1-bg);
+        border-color: var(--theme3-key1-bg) ;
+        color: var(--theme3-font-color1);
+        box-shadow: 0 3px 0 0 var(--theme3-key1-shadow);
+        &.secondary-key{
+            color: var(--all-font-color2);
+            background: var(--theme3-key2-bg);
+            border-color: var(--theme3-key2-bg) ;
+            box-shadow: 0 3px 0 0 var(--theme3-key2-shadow);
+        }
+        &.accent-key{
+            color: var(--theme3-font-color2);
+            background: var(--theme3-key3-bg);
+            border-color: var(--theme3-key3-bg) ;
+            box-shadow: 0 3px 0 0 var(--theme3-key3-shadow);
+        }
+    }
+    .switch-toggle {
+        background: var(--theme3-toggle-color);
+        input:checked + label {
+        background: var(--theme3-key3-bg);
+      }
+    }
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
